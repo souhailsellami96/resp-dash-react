@@ -1,0 +1,17 @@
+@import "./_title";
+@mixin getrevenueStyle{
+    .revenue{
+        height:100%;
+        background-color:rgb(136, 136, 136);
+        border: 1rem;
+        padding: 1rem 2.5rem;
+        margin-left: 5rem;
+        border-radius: 1rem;
+        @include gettitleStyle;
+
+        .graph{
+            height: 80%;
+            
+        }
+    }
+}

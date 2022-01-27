@@ -1,0 +1,71 @@
+.sidebar{
+    position:fixed;
+    width: 15rem;
+    height:100%;
+    background-color: #03045e;
+    display: flex;
+    flex-direction: column;
+    .brand{
+        color : rgb(237, 227, 227);
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.2rem 0;
+        font-weight: 900;
+        margin-top: 2rem;
+    }
+    .pro{
+        background-color:#023e8a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap : 0.8rem;
+        border-radius: 1.5rem;
+        margin: 0 2rem;
+        padding: 1rem 1rem;
+        text-align: center;
+        color: rgb(237, 227, 227);
+        margin-top: 5rem;
+        button{
+            color :#023e8a;
+            font-weight: 900;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius:2rem;
+            background-color: rgb(237, 227, 227);
+        }
+    }
+    .list{
+        margin-top: 7rem;
+        ul{
+            margin-bottom: 4rem;
+            .active{
+                border-right: 0.3rem solid rgb(237, 227, 227);
+                a{
+                    color:rgb(237, 227, 227)
+                }
+        }
+        }
+        li{
+            border-right: 0.3rem solid transparent;
+            margin: 1rem 0;
+            list-style-type: none;
+            a{
+                margin: 0 3rem;
+                text-decoration: none;
+                color:rgb(237, 227, 227);
+                display : flex;
+                gap : 1rem;
+            }
+            transition: 0.3s ease-in-out;
+            &:hover{
+                border-right-color: rgb(237, 227, 227);
+                a{
+                    color:rgb(169, 165, 165);
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,33 @@
+@mixin getmilestone{
+    .milestones{
+        display:flex;
+        justify-content: space-between;
+        background-color: rgb(136, 136, 136);
+        color:rgb(237, 227, 227);
+        padding: 1rem;
+        border-radius: 1rem;
+        margin: 5rem;
+        .milestone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            border-right: 3px solid white;
+            &:last-of-type{
+                border-right: none;
+                padding-right: 2rem;
+            }
+            padding-right: 8rem;
+            .icon{
+                padding:1rem;
+                font-size: 1.5rem;
+                border-radius: 1rem;
+                color: blue;
+                background-color: rgb(237, 227, 227);
+            }
+            h2{
+                color: white;
+            }
+        }
+    }
+}
